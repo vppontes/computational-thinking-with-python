@@ -61,7 +61,7 @@ def mediaPrimeiroBimestre():
     mediaTotal()
 
 def mediaSegundoBimestre():
-
+    print('a')
 
 def mediaTotal():
     ### Chamada das funções "pai"
