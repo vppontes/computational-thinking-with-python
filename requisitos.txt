@@ -1,0 +1,16 @@
+Média dos semestres:
+    3 Checkpoints, 2 válidas, menor CP é descartado (valem 20%)
+    2 Sprints (valem 20%)
+    1 Global Solution (vale 60%)
+
+Frequência:
+    freq >= 75% => Aluno está apto à passar de ano
+    freq < 75% => Aluno REPROVADO    
+
+Nota: 
+    media >= 6 => Aluno está apto à passar de ano
+    media > 4 and media < 6 => Aluno está de recuperação
+    media <= 4 => Aluno REPROVADO
+
+Média 1º Semestre é 40% da média final
+Média 2º Semestre é 60% da média final

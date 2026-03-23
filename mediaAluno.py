@@ -6,6 +6,25 @@
 
 ### MÉDIA PRIMEIRO BIMESTRE
 
+def verificarVariavel(variavel):
+    float(variavel)
+
+    if variavel != None and variavel > 0:
+        return True
+    else:
+        print('Insira um valor válido (de 0 à 100)')
+
+def verificarFrequencia():
+    frequencia = float(input('Insira a frequência: '))
+
+    verificarVariavel()
+
+    if frequencia < 75:
+        print('Aluno reprovado por frequência !')
+
+verificarFrequencia()
+
+
 def mediaPrimeiroBimestre():
     ### Listas para organizar as notas
     notasCheckpoint = []
