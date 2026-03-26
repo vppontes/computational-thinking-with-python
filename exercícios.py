@@ -70,3 +70,27 @@ elif lado1 != lado2 and lado1 != lado3 and lado2 != lado3:
     print('O triângulo é escaleno')
 else:
     print('O triângulo é isósceles')
+
+### EXERCÍCIO MATCH CASE
+input = input('''
+    Digite um número para uma operação:
+    1. Verificar nota
+    2. Editar nota
+    3. Inserir nota
+    4. Excluir nota
+    5. Sair
+''')
+
+match input:
+    case '1':
+        print('Você escolheu a opção de verificar a nota do aluno.')
+    case '2':
+        print('Você escolheu a opção de editar a nota do aluno.')
+    case '3':
+        print('Você escolheu a opção de inserir a nota do aluno.')
+    case '4':
+        print('Você escolheu a opção de excluir a nota do aluno.')
+    case '5':
+        print('Você escolheu a opção de sair, obrigado !')
+    case _:
+        print('Insira uma opção válida !')
