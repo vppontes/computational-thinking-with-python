@@ -1,12 +1,24 @@
-min = 0
-max = 0
+notas = []
+nota = 0
 
-for i in range(10):
-    valor = int(input(f'Insira o {i+1}º número: '))
+while True:
+    nota = float(input('Insira uma nota: '))
 
-    if valor > max:
-        max = valor
+    if nota == -1:
+        break
+    elif nota >= 0 and nota <= 10:
+        notas.append(nota)
     else:
-        min = valor
-print(f'O maior número digitado é {max} e o menor é {min}')
+        print('Nota inválida !')
 
+media = 0
+for i in notas:
+    media += i
+media = media / len(notas)
+
+acimaMedia = 0
+for z in notas:
+    if z > media:
+        acimaMedia += 1
+
+print(f'Total de notas: {len(notas)}\nNotas: {notas}\nMédia: {media}\nNotas acima da média: {acimaMedia}')
