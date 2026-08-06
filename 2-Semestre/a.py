@@ -2,14 +2,14 @@ import os
 
 lista_pessoas = []
 
-for i in range(2):
-    nome = input("Digite o nome da pessoa: ").capitalize()
-    idade = int(input("Digite a idade da pessoa: "))
-    sexo = input("Digite o sexo da pessoa (H/M): ").upper()
+for i in range(1):
+    nome = input("Digite o nome da pessoa: ").title().strip()
+    idade = int(input("Digite a idade da pessoa: ")).strip()
+    sexo = input("Digite o sexo da pessoa (H/M): ").upper().strip()
 
     pessoa = [nome, idade, sexo]
     lista_pessoas.append(pessoa)
     os.system('cls')
 
 for pessoa in lista_pessoas:
-    print(f"Nome: {pessoa[0]}\nIdade: {pessoa[1]}\nSexo: {pessoa[2]}\n")
+    print(f"Nome: \t{pessoa[0]}\nIdade: \t{pessoa[1]}\nSexo: \t{pessoa[2]}\n")
